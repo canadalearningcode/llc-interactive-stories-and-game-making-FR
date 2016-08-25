@@ -31,7 +31,7 @@ form {
   animation-name: move;
   animation-duration: 30s;
   animation-delay: 1s;
-  animation-direction: forwards;
+  animation-direction: normal;
   animation-timing-function: linear;
 }
 
