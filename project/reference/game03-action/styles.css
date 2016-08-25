@@ -25,9 +25,9 @@ p {
 }
 
 
-/* TARGET SECTION STYLES (ALL)
+/* TARGET FORM STYLES (ALL)
 - - - - - - - - - - - - - - - - - - - - - */
-section {
+form {
   animation-name: move;
   animation-duration: 30s;
   animation-delay: 1s;
