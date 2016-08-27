@@ -1706,24 +1706,24 @@ margin: 0px;</textarea>
 
         Super. Maintenant que nous avons établi nos images clé (`keyframes`) avec le nom `move`, comment faisons-nous en sorte qu'elles s'appliquent aux éléments de notre CSS?
 
-        Voici comment: la propriété CSS `animation`. Jetons un coup d'oeil à notre fichier `styles.css` à nouveau pour voir où changer le style de la `section`...
+        Voici comment: la propriété CSS `animation`. Jetons un coup d'oeil à notre fichier `styles.css` à nouveau pour voir où changer le style du `form`...
 
         ```
-        section {
+        form {
           animation-name: move;
           animation-duration: 30s;
           animation-delay: 1s;
-          animation-direction: forwards;
+          animation-direction: normal;
           animation-timing-function: linear;
         }
         ```
 
         Il y a quelques détails à bien comprendre ici:
         <ul>
-          <li class="delayed">Nous avons assigné l'image clé `move` à la section à l'aide d'`animation-name` (nom de l'animation)</li>
+          <li class="delayed">Nous avons assigné l'image clé `move` au `form` à l'aide d'`animation-name` (nom de l'animation)</li>
           <li class="delayed">Nous avons réglé la durée de l'animation à 30 secondes (essayez de changer cette valeur)</li>
           <li class="delayed">Nous voulons que l'animation commence 1 seconde après le chargement complet de la page</li>
-          <li class="delayed">Nous voulons que notre animation se dirige vers l'avant (`forwards`)</li>
+          <li class="delayed">Nous voulons que notre animation se dirige vers l'avant (`normal`)</li>
           <li class="delayed">Finalement, nous voulons que la vitesse de notre animation soit la même (linéaire) partout (`linear`)</li>
         </ul>
 
