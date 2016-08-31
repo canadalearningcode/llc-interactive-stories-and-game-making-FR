@@ -1208,7 +1208,7 @@ sélecteur { /* sélectionnez l'en-tête */
       <script type="text/template">
         #Les marges et le remplissage
 
-        Les valeurs de `margin` et de `padding` s'étendent de 1 à 4 pour cibler différents côtés de l'élément. Il est possible d'utiliser une variété d'unités de mesure (p.ex. px, %, ems, rems).
+        Les valeurs de `margin` et de `padding` s'étendent de 1 à 4 pour cibler différents côtés de l'élément. Il est possible d'utiliser une variété d'unités de mesure (p.ex. : px, %, ems, rems).
 
         Si vous mettez une valeur de « 0 », tout l'espace existant par défaut sera *effacé*. Si vous mettez une valeur positive, vous *ajouterez* de l'espace.
 
@@ -1275,9 +1275,9 @@ margin: 0px;</textarea>
       <script type="text/template">
         #Encore plus précis : utilisation de class
         
-        Vous souvenez-vous des attributs `lang` et `charset`? Il y a un attribut très pratique que nous pouvons employer : l'attribut `class` (classe).  
+        Vous souvenez-vous des attributs `lang` et `charset`? Il y a un autre attribut très pratique que nous pouvons employer : l'attribut `class` (classe).  
         
-        La valeur de `class` est à votre choix! Une classe s'ajoute à n'importe quelle balise pour ajouter des renseignements supplémentaires d'identification.
+        La valeur de `class` est à votre guise! Une classe peut s'ajouter à n'importe quelle balise pour fournir des renseignements supplémentaires d'identification.
         
         ```xml
         <img class="profile-img" src="images/profil.jpg" alt="Votre nom">
@@ -1291,7 +1291,7 @@ margin: 0px;</textarea>
         }
         ```
         
-        Veuillez noter que pour employer `class` comme sélecteur, celui-ci doit commencer par un point suivi du nom de la classe, sans espaces.
+        Veuillez noter que pour employer class comme sélecteur, celui-ci doit commencer par un point suivi du nom de la classe, et ce sans espace.
       </script>
     </section>
 
@@ -1301,7 +1301,7 @@ margin: 0px;</textarea>
 
         Les sélecteurs descendants correspondent aux éléments qui sont des descendants (balises emboîtées) d'un autre élément.
 
-        Ils sont utiles pour cibler des éléments à l'intérieur d'un bloc précis de contenu (p.ex. un `h1` dans un en-tête `header`).
+        Ils sont utiles pour cibler des éléments à l'intérieur d'un bloc précis de contenu (p.ex. : un `h1` dans un en-tête `header`).
 
         Remarquez qu'il y a une espace *entre* chacun des sélecteurs : c'est obligatoire.
 
@@ -1395,7 +1395,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         # Pseudo-class et effets de pointage de souris
 
-        Il est courant d'appliquer un style de pointage (`hover`) aux liens. Utilisez la propriété CSS *pseudo-class*, `:hover` pour y parvenir.  Ce mot-clé *s'attache* à un sélecteur, spécifie un *état* de l'élément et prend une virgule, mais **pas** d'espace.
+        Il est courant d'appliquer un style de pointage (`hover`) aux liens. Utilisez la propriété CSS *pseudo-class*, `:hover` pour y parvenir. Ce mot-clé *s'attache* à un sélecteur, spécifie un *état* de l'élément et prend une virgule, mais **pas** d'espace.
 
         <textarea class="snippet" data-subject="#hover">a {
           padding: 10px;
@@ -1423,11 +1423,11 @@ margin: 0px;</textarea>
 
         <ul>
           <li class="delayed">Quelles sont les **autres pages** dont vous avez besoin pour raconter votre histoire?</li>
-          <li class="delayed">Quels **hyperliens** allez-vous utiliser pour permettre aux utilisateurs de naviguer votre site?</li>
+          <li class="delayed">Quels **hyperliens** allez-vous utiliser pour permettre aux utilisateurs de naviguer sur votre site?</li>
           <li class="delayed">À quoi **ressemblera** votre site en général?</li>
         </ul>
 
-        <p class="delayed">Voulez-vous faire quelque chose en CSS, mais ne savez pas comment? <br><br>Consultez la [liste des propriétés CSS de Mozilla Developer Network](https://developer.mozilla.org/fr/docs/Web/CSS/Reference) (en français) pour en savoir plus, ou demandez à une de nos mentores!</p>
+        <p class="delayed">Vous voulez faire quelque chose en CSS, mais ne savez pas comment? <br><br>Consultez la [liste des propriétés CSS de Mozilla Developer Network](https://developer.mozilla.org/fr/docs/Web/CSS/Reference) (en français) pour en savoir plus ou demandez à une de nos mentores!</p>
 
       </script>
     </section>
@@ -1452,15 +1452,15 @@ margin: 0px;</textarea>
 
         Si vous avez déjà créé votre jeu textuel ou votre questionnaire, mettez-vous au défi de créer un jeu de carnaval semblable au [jeu d'action](project/reference/game03-action/start.html) du dossier `reference`.
 
-        Si vous êtes coincé, signalez-le à une mentore pour que celle-ci vous aide. Vous pouvez aussi travailler à deux.
+        Si vous êtes coincé, signalez-le à une mentore et elle vous aidera. Vous pouvez aussi travailler à deux.
 
-        La création de ce jeu nécessite l'utilisation de concepts CSS avancés:
+        La création de ce jeu nécessite l'utilisation de concepts CSS avancés :
 
         <ul>
           <li class="delayed">L'utilisation de `input` (entrée) et de `label` (étiquette) en HTML pour créer des zones cliquables</li>
           <li class="delayed">Encore plus de pseudo-classes</li>
           <li class="delayed">Propriété CSS `transform`</li>
-          <li class="delayed">Animations CSS par images clé</li>
+          <li class="delayed">Animations CSS par images clés</li>
         </ul>
 
       </script>
@@ -1476,7 +1476,7 @@ margin: 0px;</textarea>
 
         Une bonne façon d'apprendre des concepts avancés est d'examiner le code d'un projet terminé et de le modifier jusqu'à ce qu'il ressemble à ce que vous voulez.
 
-        Ce projet contient aussi deux feuilles de style; ne modifiez le fichier `styles-advanced.css` que si vous avez confiance en vos compétences ou si vous avez l'aide d'une mentore pour ce faire.
+        Ce projet contient aussi deux feuilles de style. Ne modifiez le fichier `styles-advanced.css` que si vous avez confiance en vos compétences ou si vous avez l'aide d'une mentore.
         
       </script>
     </section>
@@ -1507,7 +1507,7 @@ margin: 0px;</textarea>
 
         <p>Le jeu ressemble sans l'ombre d'un doute à notre projet. Il y a un `header`, une `section` et un `footer`, mais...</p>
         <ul>
-          <li class="delayed">La section contient des balises HTML que nous n'avons pas encore vues: `input` (entrée) et `label` (étiquette)</li>
+          <li class="delayed">La section contient des balises HTML que nous n'avons pas encore vues : `input` (entrée) et `label` (étiquette)</li>
           <li class="delayed">Le bas de page est vide (par exprès)</li>
         </ul>
     
@@ -1534,7 +1534,7 @@ margin: 0px;</textarea>
 
         Il est très important qu'ils correspondent afin que tout fonctionne.
 
-        Remarquez-vous quelque chose à propos de la balise `input` qui la rend particulière?
+        Remarquez-vous quelque chose à propos de la balise input qui la rend particulière?
 
         C'est<!-- .element: class="delayed" --> une balise HTML **autofermante**.
 
@@ -1558,7 +1558,7 @@ margin: 0px;</textarea>
         ```
 
         * L'arrière-plan (`background`) de toutes nos cibles est mauve.
-        * Nos cibles sont circulaires et ont un rayon de bordure (`border-radius`) de 50%
+        * Nos cibles sont circulaires et ont un rayon de bordure (`border-radius`) de 50 %
         * Nous avons utilisé une nouvelle propriété CSS du nom de `box-shadow` (ombre de la boîte) pour forcer le CSS à donner une double bordure à nos cibles. Changez la valeur des pixels et les codes hexa pour voir ce qui se passe!
 
       </script>
@@ -1572,9 +1572,9 @@ margin: 0px;</textarea>
 
         Il y a [plusieurs sortes d'entrées](https://developer.mozilla.org/fr/docs/Web/HTML/Element/input). Aujourd'hui, nous utiliserons une entrée avec l'attribut `type` qui porte le nom de `radio`.
 
-        Un **radio button** (bouton d'option) s'emploie dans les formulaires afin que l'utilisateur puisse ne faire qu'un seul choix parmi des choix multiples.
+        Un **radio button** (bouton d'option) s'emploie dans les formulaires afin que l'utilisateur puisse ne sélectionner qu'un seul choix parmi des choix multiples.
 
-        Les boutons d'option sont donc l'opposé des **cases à cocher** (attribut `checked`) pour faire des choix multiples.
+        Les boutons d'option sont donc l'opposé des **cases à cocher** (attribut `checked`), qui permettent de faire des choix multiples.
 
         <img src="framework/img/input-types.png" alt="Radio contre checked">
 
@@ -1587,7 +1587,7 @@ margin: 0px;</textarea>
 
         Vous souvenez-vous qu'il est possible de cibler un élément avec le CSS à l'aide de la pseudo-class `:hover` en pointant le curseur sur cet élément?
 
-        La même chose se fait en cliquant un **bouton d'option** (radio button), sauf que celui-ci prend la pseudo-classe de `:checked` en CSS.
+        La même chose se fait en cliquant sur un **bouton d'option** (radio button), sauf que ce bouton prend la pseudo-classe de `:checked` en CSS.
 
         Vous en saurez plus à propos de `:checked` dans quelques diapositives...
 
@@ -1600,7 +1600,7 @@ margin: 0px;</textarea>
 
         Une autre pseudo-classe utile est le sélecteur `:nth-of-type()` (ntième du type)
 
-        Le sélecteur `:nth-of-type()` cible des éléments selon leur ordre dans le balisage HTML. Voyons voir la balise section de notre projet:
+        Le sélecteur `:nth-of-type()` cible des éléments selon leur ordre dans le balisage HTML. Voyons voir la balise section de notre projet :
 
         ```
         <input type="radio" id="target1"/><label for="target1"></label>
@@ -1610,7 +1610,7 @@ margin: 0px;</textarea>
         <input type="radio" id="target5"/><label for="target5"></label>
         ```
 
-        Le projet commence avec 5 cibles. En employant les sélecteurs `:nth-of-type()` du CSS, nous pouvons maintenant sélectionner chaque étiquette (`label`) une par une:
+        Le projet commence avec cinq cibles. En employant les sélecteurs `:nth-of-type()` du CSS, nous pouvons maintenant sélectionner chaque étiquette (`label`) une par une:
 
         ```
         label:first-of-type {
@@ -1643,13 +1643,13 @@ margin: 0px;</textarea>
       <script type="text/template">
         #Propriété CSS transform
 
-        La propriété CSS `transform` vous permet de manipuler visuellement (transformer) un élément en le désalignant, en le pivotant, en le déplaçant ou en le mettant à l'échelle tant sur le plan 2D qu'en 3D.
+        La propriété CSS `transform` vous permet de manipuler visuellement (transformer) un élément en le désalignant, en le pivotant, en le déplaçant ou en le mettant à l'échelle tant sur le plan 2D que 3D.
 
         Aujourd'hui, nous utiliserons la valeur de transformation `rotateX` (pivoterX) pour que les cibles tombent à la renverse.
 
         <img src="framework/img/css-transforms.gif" alt="Propriété CSS transform">
 
-        Voir le code pour les transformations ci-dessus sur [codepen](http://codepen.io/team/css-tricks/pen/ebb6b5a5cec86aa04168f03e26c7501c?editors=1100) (en anglais)
+        Voir le code sur [codepen](http://codepen.io/team/css-tricks/pen/ebb6b5a5cec86aa04168f03e26c7501c?editors=1100) (en anglais) pour les transformations ci-dessus.
 
       </script>
     </section>
@@ -1665,7 +1665,7 @@ margin: 0px;</textarea>
           transform: rotateX(70deg); 
         }
         ```
-        <p class="delayed">Un instant, que veut dire le `+`?</p>
+        <p class="delayed">Un instant... Mais que veut dire le `+`?</p>
         <p class="delayed">La règle CSS ci-dessus se résume en « étiquette qui suit directement la balise d'entrée " case à cocher " » et applique la propriété CSS `transform` à cette étiquette.</p>
 
         <p class="delayed">Apprenez-en plus à propos de la propriété CSS `transform` sur [CSS Tricks](https://css-tricks.com/almanac/properties/t/transform/)</p>
@@ -1675,14 +1675,14 @@ margin: 0px;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Animations en CSS par images clé
+        #Animations en CSS par images clés
 
-        La dernière pièce du « casse-tête » pour notre jeu d'action est de faire bouger les cibles de droite à gauche de l'écran. Il est possible de ce faire en utilisant les **images clé** (`keyframes`) du CSS.
+        La dernière pièce du « casse-tête » pour notre jeu d'action est de faire bouger les cibles de droite à gauche de l'écran. Il est possible d’y arriver en utilisant les **images clés** (`keyframes`) du CSS.
 
-        Descendez complètement en bas du fichier `styles.css`: c'est là que sont nos images clé.
+        Descendez complètement en bas du fichier `styles.css`: c'est là que se trouvent nos images clés.
 
         ```
-        /* ANIMATION EN CSS PAR IMAGES CLÉ POUR FAIRE BOUGER LES CIBLES
+        /* ANIMATION EN CSS PAR IMAGES CLÉS POUR FAIRE BOUGER LES CIBLES
         - - - - - - - - - - - - - - - - - - - - - */
         @keyframes move {
           to {
@@ -1695,18 +1695,18 @@ margin: 0px;</textarea>
 
         <p class="delayed">C'est clair comme de l'eau de bouette, hein?</p>
 
-        <p class="delayed">Ce que cela signifie: nous voulons que l'animation parte de l'écran, vers la gauche, avec une valeur négative de 100%.</p>
+        <p class="delayed">Ce que cela signifie : nous voulons que l'animation parte de l'écran, vers la gauche, avec une valeur négative de 100%.</p>
 
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Animations CSS par images clé
+        #Animations CSS par images clés
 
-        Super. Maintenant que nous avons établi nos images clé (`keyframes`) avec le nom `move`, comment faisons-nous en sorte qu'elles s'appliquent aux éléments de notre CSS?
+        Super. Maintenant que nous avons établi nos images clés (`keyframes`) avec le nom `move`, comment faisons-nous pour qu'elles s'appliquent aux éléments de notre CSS?
 
-        Voici comment: la propriété CSS `animation`. Jetons un coup d'oeil à notre fichier `styles.css` à nouveau pour voir où changer le style de la `section`...
+        Voici comment: la propriété CSS `animation`. Jetons à nouveau un coup d'oeil à notre fichier `styles.css` pour voir où changer le style de la `section`...
 
         ```
         section {
@@ -1718,7 +1718,7 @@ margin: 0px;</textarea>
         }
         ```
 
-        Il y a quelques détails à bien comprendre ici:
+        Il y a quelques détails à bien comprendre ici :
         <ul>
           <li class="delayed">Nous avons assigné l'image clé `move` à la section à l'aide d'`animation-name` (nom de l'animation)</li>
           <li class="delayed">Nous avons réglé la durée de l'animation à 30 secondes (essayez de changer cette valeur)</li>
@@ -1734,10 +1734,10 @@ margin: 0px;</textarea>
       <script type="text/template">
         #Personnalisation du jeu
 
-        Maintenant que nous en savons un peu plus à propos de la construction du jeu d'action, essayez de le modifier pour qu'il soit à votre goût!
+        Maintenant que vous en savez un peu plus à propos de la construction du jeu d'action, essayez de le modifier pour qu'il soit à votre goût!
 
-        * À quoi **changeriez-vous la vitesse** des cibles?
-        * Que faire si vous voulez des **cibles carrées**, pas circulaires?
+        * **Changeriez-vous la vitesse** des cibles?
+        * Que faire si vous voulez des **cibles carrées**, et non circulaires?
         * Changez la **couleur** et la **taille** des cibles et **ajoutez-y des photos de vos amis** en arrière-plan!
         * Pourquoi n'avoir que 5 cibles? **Ajoutez-en plus** en copiant les entrées et les étiquettes (`input` et `label`), en changeant les attributs `id` et `for` de manière appropriée et en modifiant le CSS à l'aide de la pseudo-classe `nth-of-type`!
 
@@ -1756,13 +1756,13 @@ margin: 0px;</textarea>
       <script type="text/template">
       #Mettre en ligne son histoire, son jeu ou son questionnaire
 
-      Connectez-vous à l'aide du compte créé pour le Jour d'initiation à la programmation à l'adresse [https://thimble.mozilla.org/fr/](https://thimble.mozilla.org/fr/)
+      Connectez-vous, à l'aide du compte créé pour le Jour d'initiation à la programmation, à l'adresse [https://thimble.mozilla.org/fr/](https://thimble.mozilla.org/fr/)
 
       1. Nom d'utilisateur: **llccodeday** | Mot de passe: **Helloworld123**
       1. Lorsque vous êtes connecté, cliquez sur `Créer un nouveau projet`. Vous verrez un éditeur de texte et une fonction d'aperçu à l'intérieur du navigateur. On dirait Atom!
-      1. Avant de commencer, **donnez un titre à votre projet!!!** et n'oubliez pas d'écrire votre nom dans le projet.
+      1. Avant de commencer, **donnez un titre à votre projet** et n'oubliez pas d'écrire votre nom dans le projet.
       1. Cliquez sur le bouton `+` à côté de « FICHIERS » dans le coin en haut à gauche et téléversez tous vos fichiers HTML et votre fichier CSS.
-      1. Pour créer un dossier *images*, faites un clic droit sur la barre latérale de gauche et cliquez sur `Nouveau répertoire`. Nommez-le « images » et téléversez-y vos images quand le dossier a été créé.
+      1. Pour créer un dossier *images*, faites un clic droit sur la barre latérale de gauche et cliquez sur `Nouveau répertoire`. Nommez-le « images » et téléversez-y vos images.
       1. Quand vous avez terminé, cliquez sur « Publier » et vous obtiendrez un lien vers votre projet que vous pouvez partager sur les réseaux sociaux ou avec vos amis et votre famille!
 
       Si vous publiez vos projets sur Twitter aujourd'hui, n'oubliez pas d'utiliser le mot-clic **#llcCodeDay**! Nous aimerions voir ce que vous avez fait! 
@@ -1774,9 +1774,9 @@ margin: 0px;</textarea>
       <script type="text/template">
         # La suite
 
-        Voici quelques idées pour pousser votre projet encore plus loin:
+        Voici quelques idées pour pousser votre projet encore plus loin :
 
-        1. Utilisez des polices d'icônes plutôt que des images pour les icônes vers les réseaux sociaux
+        1. Utilisez des polices d'icônes plutôt que des images pour les liens vers les réseaux sociaux
           * Essayez les polices d'icônes de [Font Awesome](http://fortawesome.github.io/Font-Awesome/) (en anglais)
         1. Ajoutez des métadonnées (metadata) - [voir les informations ici](https://support.google.com/webmasters/answer/79812?hl=fr)
         1. Ajoutez une favicône [Team Treehouse](http://blog.teamtreehouse.com/how-to-make-a-favicon) (en anglais)
@@ -1791,7 +1791,7 @@ margin: 0px;</textarea>
           * http://learn.shayhowe.com/html-css/
           * https://www.codeschool.com/courses/front-end-foundations
         1. http://www.htmlandcssbook.com
-        1. Participez à d'autres ateliers Ladies Learning Code. Consultez notre plan de route pour connaître votre prochaine destination: [http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
+        1. Participez à d'autres ateliers Ladies Learning Code! Consultez notre plan de route pour connaître votre prochaine destination: [http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
       </script>
     </section>
 
