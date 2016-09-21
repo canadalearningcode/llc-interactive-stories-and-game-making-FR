@@ -1491,7 +1491,7 @@ margin: 0px;</textarea>
             <h1>Le <strong>carnaval</strong> de l'apprentissage du code!</h1>
           </header>
           
-          <section>
+          <form action="#" autocomplete="off">
 
             <input type="radio" id="target1"/><label for="target1"></label>
             <input type="radio" id="target2"/><label for="target2"></label>
@@ -1499,15 +1499,15 @@ margin: 0px;</textarea>
             <input type="radio" id="target4"/><label for="target4"></label>
             <input type="radio" id="target5"/><label for="target5"></label>
 
-          </section>
+          </form>
 
           <footer>
           </footer>
         ```
 
-        <p>Le jeu ressemble sans l'ombre d'un doute à notre projet. Il y a un `header`, une `section` et un `footer`, mais...</p>
+        <p>Le jeu ressemble sans l'ombre d'un doute à notre projet. Il y a un `header` et un `footer`, mais...</p>
         <ul>
-          <li class="delayed">La section contient des balises HTML que nous n'avons pas encore vues : `input` (entrée) et `label` (étiquette)</li>
+          <li class="delayed">La section contient des balises HTML que nous n'avons pas encore vues: `input` (entrée) et `label` (étiquette) a l'interieur d'un `form` (formulaire)</li>
           <li class="delayed">Le bas de page est vide (par exprès)</li>
         </ul>
     
@@ -1706,24 +1706,24 @@ margin: 0px;</textarea>
 
         Super. Maintenant que nous avons établi nos images clés (`keyframes`) avec le nom `move`, comment faisons-nous pour qu'elles s'appliquent aux éléments de notre CSS?
 
-        Voici comment: la propriété CSS `animation`. Jetons à nouveau un coup d'oeil à notre fichier `styles.css` pour voir où changer le style de la `section`...
+        Voici comment: la propriété CSS `animation`. Jetons un coup d'oeil à notre fichier `styles.css` à nouveau pour voir où changer le style du `form`...
 
         ```
-        section {
+        form {
           animation-name: move;
           animation-duration: 30s;
           animation-delay: 1s;
-          animation-direction: forwards;
+          animation-direction: normal;
           animation-timing-function: linear;
         }
         ```
 
         Il y a quelques détails à bien comprendre ici :
         <ul>
-          <li class="delayed">Nous avons assigné l'image clé `move` à la section à l'aide d'`animation-name` (nom de l'animation)</li>
+          <li class="delayed">Nous avons assigné l'image clé `move` au `form` à l'aide d'`animation-name` (nom de l'animation)</li>
           <li class="delayed">Nous avons réglé la durée de l'animation à 30 secondes (essayez de changer cette valeur)</li>
           <li class="delayed">Nous voulons que l'animation commence 1 seconde après le chargement complet de la page</li>
-          <li class="delayed">Nous voulons que notre animation se dirige vers l'avant (`forwards`)</li>
+          <li class="delayed">Nous voulons que notre animation se dirige vers l'avant (`normal`)</li>
           <li class="delayed">Finalement, nous voulons que la vitesse de notre animation soit la même (linéaire) partout (`linear`)</li>
         </ul>
 
