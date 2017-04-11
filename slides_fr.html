@@ -120,7 +120,7 @@
           <li class="delayed">Façon puissante de faire passer un message, une cause ou une idée dans un monde numérique qui déborde de contenu</li>
           <li class="delayed">Selon l'[Association canadienne du logiciel de divertissement](http://theesa.ca/wp-content/uploads/2015/11/ESAC_2015_Booklet_FRENCHVersion04_DigitalSpreads.pdf), plus de 54 % des Canadiens sont considérés comme des « joueurs »</li>
           <li class="delayed">Parmi ces 54 %, environ la moitié sont des femmes</li>
-          <li class="delayed">Néanmoins, les femmes ne comptent que pour ***3 % des créateurs de jeux vidéo dans l'industrie des technologies*** </li>
+          <li class="delayed">Néanmoins, les femmes ne comptent que pour ***16 % des créateurs de jeux vidéo dans l'industrie des technologies, et 6% des experts techniques (programmation)*** </li>
         </ul>
 
       </script>
@@ -335,7 +335,7 @@
         <extérieure>contenu extérieur <intérieure>contenu intérieur</intérieure> contenu extérieur</extérieure>
         ```
 
-        L'emboîtement de balises créé une hiérarchie, que l'on appelle aussi une relation *parent*-*enfant*.
+        L'emboîtement de balises crée une hiérarchie, que l'on appelle aussi une relation *parent*-*enfant*.
 
         La balise intérieure est l'enfant de la balise extérieure, le parent.
 
@@ -349,7 +349,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Organisaiton du code
+        #Organisation du code
 
         Le HTML a été créé pour être lu par les navigateurs Web, pas par les humains. Les navigateurs comprennent donc parfaitement la ligne suivante:
 
@@ -357,7 +357,7 @@
         <!DOCTYPE html><html lang="fr"><head><meta charset="UTF-8"><title></title></head><body></body></html>
         ```
 
-        Toutefois, pour nous, il est plus facile de lire du code HTML avec des espaces. Quand vous emboîtez des balises, ajoutez une espace.
+        Toutefois, pour nous, il est plus facile de lire du code HTML avec des espaces. Quand vous emboîtez des balises, ajoutez une tabulation pour chaque niveau.
 
         ```
         <baliseextérieure>
@@ -490,7 +490,7 @@
         #L'élément HTML
 
         * toujours la première balise HTML, indique que le document est écrit en HTML
-        * l'élément racine et l'ancêtre (parent) de tous les éléments, car tout est *emboîté* à l'intérieur de cette balise
+        * l'élément racine est l'ancêtre (parent) de tous les éléments, car tout est *emboîté* à l'intérieur de cette balise
         * l'*attribut* `lang` indique la langue utilisée (nous reviendrons sur les attributs bientôt)
 
         <pre><code>&lt;!DOCTYPE html&gt;
@@ -538,7 +538,7 @@
 
         Tout le contenu qui doit être affiché dans la fenêtre du navigateur va entre les balises `<body></body>`.
 
-        Ces balises sont aussi connues comme étant les balises du d'*affichage*.
+        Ces balises sont aussi connues comme étant les balises d'*affichage*.
 
         <pre><code>&lt;!DOCTYPE html&gt;
         &lt;html lang=&quot;fr&quot;&gt;
@@ -657,7 +657,7 @@
       <script type="text/template">
         #Les en-têtes
 
-        Il y a six balises d'en-tête, de `<h1>` à `<h6>`, qui décrivent la hiérarchie de la structure de la page. Afin de choisir l'en-tête à utiliser, pensez à la façon dont vous organisereriez un plan de texte.
+        Il y a six balises d'en-tête, de `<h1>` à `<h6>`, qui décrivent la hiérarchie de la structure de la page. Afin de choisir l'en-tête à utiliser, pensez à la façon dont vous organiseriez un essai.
 
         <div class="example essay-headings">
         <p><strong>Titre du texte</strong></p>
@@ -679,7 +679,7 @@
         </ol>
         </div>
 
-        Voyons voir comment décrire cette hiérarchie à l'aide des balises d'en-tête.
+        Voyons comment décrire cette hiérarchie à l'aide des balises d'en-tête.
       </script>
     </section>
 
@@ -735,9 +735,9 @@
       <script type="text/template">
         #Les balises autofermantes et les images
 
-        Les balises autofermantes ne changent pas le formatage du contenu et ne nécessitent pas de balise de fermeture. Elles sont employées pour emboîter des éléments dans la page : elles *sont* le contenu.
+        Les balises autofermantes ne changent pas le formatage du contenu et ne nécessitent pas de balise de fermeture. Elles *sont* le contenu.
 
-        Les images utilisent une balise autofermante et nécessitent un *attribut* `src` pour indiquer au navigateur l'emplacement du fichier de l'image.
+        Les images utilisent une balise autofermante et nécessitent un *attribut* `src` pour indiquer au navigateur l'emplacement du fichier source.
 
         ```
         <img src="chemin/vers/image/nomdufichier">
@@ -778,21 +778,21 @@
       <script type="text/template">
         #Chemin des fichiers image
 
-        Il est recommandé, mais pas nécessaire, de mettre toutes les fichiers image dans un même dossier pour garder les fichiers du projet en ordre. Le répertoire **project** que nous utilisons aujourd'hui comprend déjà un dossier **images**.
+        Il est recommandé, mais pas nécessaire, de mettre tous les fichiers image dans un même dossier pour garder le projet en ordre. Le répertoire **project** que nous utilisons aujourd'hui comprend déjà un dossier **images**.
 
-        Comme les images ne sont pas dans le même dossier que **depart.html**, utilisez un chemin *relié* vers lequel faire un lien vers les fichiers image.
+        Comme les images ne sont pas dans le même dossier que **depart.html**, utilisez un chemin *relatif* vers lequel faire un lien vers les fichiers image.
 
         ```
         <img src="images/fichierimage.jpg">
         ```
-        Le point de départ (**depart.html**) se trouve à l'extérieur du dossier **image**. Dans l'exemple ci-dessus, le lien redirige le navigateur vers un dossier nommé **images** puis vers le nom du fichier, *y compris l'extension du fichier*.
+        Le point de départ (**depart.html**) se trouve à l'extérieur du dossier **image**. Dans l'exemple ci-dessus, le lien dirige le navigateur vers un dossier nommé **images** puis vers le fichier (*incluant son extension*).
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
         #Chemin des fichiers image
-        Si vous avez un dossier à l'intérieur d'un dossier, ce qu'on appelle un sous-dossier, ajoutez ce sous-dossier au nom du chemin.
+        Si vous avez un dossier à l'intérieur d'un dossier, ce qu'on appelle un sous-dossier, ajoutez-le au chemin dans votre document.
 
         ```
         <img src="dossier/sousdossier/nomdufichier">
@@ -849,11 +849,11 @@
         #Le CSS: la présentation
 
         * un langage différent du HTML
-        * un langage avec des feuilles de style qui a ses propres règles de syntaxe
-        * utilisé pour séparer le fond (HTML) de la forme (CSS)
+        * un langage de style qui a ses propres règles de syntaxe
+        * utilisé pour séparer le contenu (HTML) du la pr&eacute;sentation (CSS)
         * la feuille de style contient une liste de règles
 
-        Le CSS nécessite ces symboles: les accolades `{ }`, le deux-points `:`, le point-virgule `;` (Image: clavier Apple, français (Canada))
+        Le CSS nécessite les symboles suivants: les accolades `{ }`, le deux-points `:`, le point-virgule `;` (Image: clavier Apple, français (Canada))
 
         ![clavier](framework/img/workshop/keyboard-css_fr.png)
       </script>
@@ -989,8 +989,8 @@ sélecteur { /* sélectionnez l'en-tête */
 
         * **mot-clé** - utilisez le nom de la couleur en anglais
         (e.g. `red`, `green`, `blue`, `pink`, `papayaWhip`, `paleGoldenrod`, etc)
-        * **RGB** - utilise trois valeurs numériques entre `0` (noir) et `255` (blanc)
-        * **code hexa** - symbole du carré (`#`) suivi de six caractères (0-9, A-F)
+        * **RGB** - utilise trois valeurs (rouge, vert, bleu) numériques entre `0` (aucune couleur) et `255` (pleine intensit&eacute;)
+        * **code hexa** - symbole du carré (`#`) suivi de six caractères (0-9, A-F), repr&eacute;sentant encore un triplet RGB
 
         ```
         /* Ces exemples écrits de trois manières différentes représentent tous la même couleur. En passant, ceci est un commentaire CSS! */
@@ -1107,7 +1107,7 @@ sélecteur { /* sélectionnez l'en-tête */
       <script type="text/template">
         #Héritage et spécificité
 
-        Les styles sont une des forces du CSS. Ils peuvent être hérités d'un élément parent à un élément enfant. Repassons sur la relation de hiérarchie familiale entre les éléments.
+        Les styles du CSS peuvent être hérités d'un élément parent par un élément enfant. Repassons sur la relation d'hiérarchie familiale entre les éléments.
 
         ```
         <body><!-- parent de h1 et de p -->
@@ -1116,7 +1116,7 @@ sélecteur { /* sélectionnez l'en-tête */
         </body>
         ```
 
-        Les propriétés CSS du sélecteur CSS `body` sont héritées par les éléments, les descendants. Un sélecteur plus précis remplacera ces valeurs héritées.
+        Les propriétés CSS du sélecteur `body` sont héritées par ses éléments descendants. Un sélecteur plus précis remplacera ces valeurs héritées.
         ```
         body {
           color: #222222;
@@ -1173,8 +1173,8 @@ sélecteur { /* sélectionnez l'en-tête */
         Par défaut, certains éléments HTML sont en **bloc** ou en **ligne**.
 
         ##Éléments en bloc
-        *   jusqu'à 100 % de la largeur de son contenant
-        *   peut appliquer des éléments CSS liés à la taille (marges (margin), remplissage (padding), hauteur (height), largeur (width)
+        *   occupe 100 % de la largeur de son contenant, par defaut
+        *   peut appliquer des éléments CSS liés à la taille (marges (margin), remplissage (padding), hauteur (height), largeur (width))
 
         <textarea class="snippet" data-subject="#block">background: lightblue;
         padding: ;
@@ -1254,7 +1254,7 @@ sélecteur { /* sélectionnez l'en-tête */
     <section class="slide">
       <h1>Exercice!</h1>
 
-      <p>Exercez-vous à utiliser les marges (margin) et le remplissage (below) en mettant des valeurs de 1 à 4 dans l'exemple ci-dessous.</p>
+      <p>Exercez-vous à utiliser les marges (margin) et le remplissage (padding) en modifiant les valeurs de l'exemple ci-dessous.</p>
       <textarea class="snippet" data-subject="#example">background: lightblue;
 padding: 0px;
 margin: 0px;</textarea>
@@ -1299,11 +1299,11 @@ margin: 0px;</textarea>
       <script type="text/template">
         #Sélecteurs descendants
 
-        Les sélecteurs descendants correspondent aux éléments qui sont des descendants (balises emboîtées) d'un autre élément.
+        Les sélecteurs descendants correspondent aux enfants d'un autre élément.
 
         Ils sont utiles pour cibler des éléments à l'intérieur d'un bloc précis de contenu (p.ex. : un `h1` dans un en-tête `header`).
 
-        Remarquez qu'il y a une espace *entre* chacun des sélecteurs : c'est obligatoire.
+        Remarquez qu'il y a un espace *entre* chacun des sélecteurs : c'est obligatoire.
 
         ```css
         p a {
@@ -1393,9 +1393,9 @@ margin: 0px;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Pseudo-class et effets de pointage de souris
+        # Pseudo-classe et effets de pointage de souris
 
-        Il est courant d'appliquer un style de pointage (`hover`) aux liens. Utilisez la propriété CSS *pseudo-class*, `:hover` pour y parvenir. Ce mot-clé *s'attache* à un sélecteur, spécifie un *état* de l'élément et prend une virgule, mais **pas** d'espace.
+        Il est courant d'appliquer un style de pointage (`hover`) aux liens. Utilisez la *pseudo-classe* CSS `:hover` pour y parvenir.  Ce mot-clé *s'attache* à un sélecteur et spécifie un *état* de l'élément. Il prend deux-points, mais **pas** d'espace.
 
         <textarea class="snippet" data-subject="#hover">a {
           padding: 10px;
@@ -1585,7 +1585,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #PSEUDO-CLASSE :checked
 
-        Vous souvenez-vous qu'il est possible de cibler un élément avec le CSS à l'aide de la pseudo-class `:hover` en pointant le curseur sur cet élément?
+        Vous souvenez-vous qu'il est possible de cibler un élément avec le CSS à l'aide de la pseudo-classe `:hover` en pointant le curseur sur cet élément?
 
         La même chose se fait en cliquant sur un **bouton d'option** (radio button), sauf que ce bouton prend la pseudo-classe de `:checked` en CSS.
 
