@@ -12,7 +12,7 @@ Consultez la diapositive n° 6 pour obtenir des suggestions pour intégrer le th
 
 ## Liens rapides
 
-Aperçu des diapositives : https://ladieslearningcode.github.io/llc-interactive-stories-and-game-making/slides_fr.html#slide1
+Aperçu des diapositives : https://ladieslearningcode.github.io/llc-interactive-stories-and-game-making-FR/slides_fr.html
 
 ## Sources
 
